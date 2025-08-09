@@ -1,0 +1,12 @@
+streamlit
+matplotlib
+pandas
+openpyxl
+langchain
+langchain-google-genai
+langchain-community
+google-generativeai
+chromadb
+pypdf
+sentence-transformers
+python-dotenv
