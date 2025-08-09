@@ -63,3 +63,31 @@ To maximize accuracy and avoid hallucinations:
 * **Limitations:** PDF handling is text-only (no native table extraction, may lose structure without OCR). Charts are basic (Matplotlib line plots; assumes column names in query). Local Chroma can lock files on Windows, causing deletion issues during uploads. No multi-modal support yet (e.g., image tables). Free Gemini API has rate limits.
 
 * **Future Improvements:** Add OCR (e.g., EasyOCR) for image/PDF tables (bonus multi-modal). Switch to Pinecone for cloud storage (avoids local locks, scales better). Implement advanced chunking (e.g., semantic-based with LLMs) and cost tracking (e.g., token usage). Enhance UI with React for better UX. Add evaluation metrics (e.g., automated accuracy tests on query types).
+
+## Setup Steps:
+
+Clone or Download the project folder to your local computer.
+
+* Set Up Environment:
+
+* Open a terminal in the project directory.
+
+* Create and activate a virtual environment:
+  
+```python -m venv venv```
+
+```venv\Scripts\activate          # On Windows```
+
+```source venv/bin/activate       # On Mac/Linux```
+
+Install all dependencies:
+
+```pip install -r requirements.txt```
+
+Insert API Key in .env
+```GOOGLE_API_KEY=your_gemini_api_key_here```
+
+Run the App:
+```streamlit run app.py```
+
+
